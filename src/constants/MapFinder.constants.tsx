@@ -1,0 +1,3 @@
+export enum MAP_FINDER {
+  GOOGLE_MAP_API_KEY = "AIzaSyCFHDeeUsJIvSRbQ7mrjLCTQi5Wu8JcDik",
+}
