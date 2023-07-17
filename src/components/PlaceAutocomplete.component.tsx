@@ -50,7 +50,7 @@ const PlaceAutocompleteInput = () => {
   }, [placePredictions]);
 
   const onPlaceSelected = (place: google.maps.places.PlaceResult) => {
-    const placeData = {
+    const placeData: PlaceModel = {
       description: place?.formatted_address ?? "",
       place_id: place?.place_id ?? "",
       reference: place?.place_id ?? "",

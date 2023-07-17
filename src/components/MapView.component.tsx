@@ -21,7 +21,7 @@ const MapView = () => {
     (state) => state.placeState.selectedPlace?.geoLocation ?? DEFAULT_LOCATION
   );
 
-  const [map, setMap] = useState(null);
+  const [map, setMap] = useState<google.maps.Map>();
   const [markerPosition, setMarkerPosition] = useState(geoLocation);
 
   useEffect(() => setMarkerPosition(geoLocation), []);
